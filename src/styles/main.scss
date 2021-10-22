@@ -1,3 +1,8 @@
-.class-g{
-  width: 30%;
-}
+@import "./variables";
+@import "./helpers/helpers";
+@import "./images/images";
+@import "./typography/typography";
+@import "./buttons/buttons";
+@import "./navbar/navbar";
+@import "./footer/footer";
+

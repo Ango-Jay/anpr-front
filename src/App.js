@@ -1,7 +1,13 @@
+import Landing from "./pages/landing/landing";
+import NavBar from "./components/navBar";
+import Footer from "./components/footer";
+
 export default function App() {
   return (
-    <div className="App class-g">
-      <h1>Hello CodeSandbox</h1>
+    <div className="App">
+      <NavBar />
+      <Landing />
+      <Footer />
     </div>
   );
 }
