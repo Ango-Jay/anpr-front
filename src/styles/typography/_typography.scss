@@ -2,7 +2,15 @@
 h3{
   font-weight: 700;
 }
-.bg-img-txt{
-  position: absolute;
+.bg-img-content{
   color: $white-text;
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  left:0;
+   right:0; 
+   text-align: center; 
+  }
+.bg-img-txt{
+  margin-bottom: 2.5rem;
 }
