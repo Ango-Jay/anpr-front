@@ -8,3 +8,13 @@
       padding-top: 66.64%; /* (img-height / img-width * container-width) */
                   /* (853 / 1280 * 100) */
   }
+  .feature-img{
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("/assets/bg-img7-min.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        padding-top: 66.64%; /* (img-height / img-width * container-width) */
+                    /* (853 / 1280 * 100) */
+  }
