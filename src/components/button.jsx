@@ -1,10 +1,14 @@
 import React from "react";
 
-const Button = () => {
+const Button = (props) => {
   return (
     <div>
-      <button className="waves-effect waves-light btn landing-btn">
-        <i className="material-icons left">cloud_upload</i> Upload
+      <button
+        className="waves-effect waves-light btn landing-btn"
+        style={props.style}
+      >
+        <i className="material-icons left">{props.buttonIconName}</i>{" "}
+        {props.buttonFunction}
       </button>
     </div>
   );

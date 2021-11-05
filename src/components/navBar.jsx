@@ -6,7 +6,7 @@ const NavBar = () => {
       <nav>
         <div className="nav-wrapper">
           <a href="#!" className="brand-logo">
-            Logo
+            <i className="material-icons">camera_alt</i>
           </a>
           <a href="#" data-target="mobile-demo" className="sidenav-trigger">
             <i className="material-icons">menu</i>

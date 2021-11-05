@@ -1,4 +1,22 @@
-button.landing-btn{
+button{
+  &.landing-btn{
   background-color: $landing-theme;
 text-align: center;
+margin-right: 1rem;
+margin-bottom: 0.5rem;
+display:flex; 
+align-items:center;
+height: auto;
+
+@include respond(phone-xs){
+  flex-grow: 1;
+margin-right: 0rem;
+
+  }
+  @include respond(phone){
+  margin: 1rem;
+  
+    }
+}
+
 }
