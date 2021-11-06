@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="center-align">ANPR SYSTEM</p>
           <p>
             {" "}
-            © 20121 Copyright Designed by{" "}
+            © 2021 Copyright Designed by{" "}
             <a className="grey-text text-lighten-4" href="#!">
               Ango Jay
             </a>

@@ -5,6 +5,7 @@ import App from "./App";
 import "materialize-css/dist/css/materialize.min.css";
 import "./styles/main.scss";
 
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
