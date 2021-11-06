@@ -46,11 +46,11 @@ const BgImgContainer = () => {
       <div className="pt-main"></div>
     <h3>Upload Image Here</h3>
      <div className="disp-flex justify-center flex-dir-column align-item-center">
-                <Button buttonIconName="cloud_upload" buttonFunction="Upload" />
+                <Button buttonIconName="cloud_upload" buttonFunction="Upload" buttonNavigation="/result" />
                 <Button
                   buttonIconName="code"
                   buttonFunction="View source code"
-                  style={buttonStyle}
+                  style={buttonStyle} buttonNavigation="https://github.com/Ango-Jay/anpr-front"
                 />{" "}
                 <p className="gray-txt">* only .PNG, .JPG files are allowed</p>
               </div>
