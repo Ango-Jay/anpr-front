@@ -5,6 +5,19 @@ import carImg from "../../../public/assets/car-min.jpg";
 import licenseImg from "../../../public/assets/license.png";
 
 const Result = () => {
+  const isSaved = () => {
+    if ("e" === 0) {
+      return <Button buttonIconName="save" buttonFunction="Save" />;
+    } else {
+      return (
+        <Button
+          buttonIconName="delete"
+          buttonFunction="Delete"
+          style={{ backgroundColor: "#af0404" }}
+        />
+      );
+    }
+  };
   return (
     <div className="result">
       <div className="result-background-header">
@@ -65,9 +78,7 @@ const Result = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="result-button">
-                <Button buttonIconName="save" buttonFunction="Save" />
-              </div>
+              <div className="result-button">{isSaved()}</div>
             </div>
           </div>
         </div>
