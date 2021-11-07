@@ -12,8 +12,10 @@
                     /* (853 / 1280 * 100) */
                  
      &-lg{
-       
-         display: flex;
+      @include respond(tab-port){
+        display: flex;
+      }
+         
         
            
            &-upload{
@@ -67,4 +69,55 @@ text-align:center;
   }
 }
 
+.result{
+  background-color: #f4f8ff;
+  &-background-header{
+    background-color: $landing-theme;
+    //background-image:  linear-gradient( rgba(138, 138, 138, 0.5), rgba(43, 43, 43, 0.5) );
+    color: #fff;
+    
+  }
+  &-background-title{
+    padding-left: 1rem; 
+  }
+  &-status{
+    //border: 2px solid #00FF00;
+  //  border-radius: 50px;
+    display: inline-block;
+    &-txt{
+      color: #00FF00;
+     // transform: rotate(-10deg);
+      padding-bottom: 1rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      @include respond(phone){
+        padding-bottom: 1.5rem;
+      }
+    }
+  } 
+  &-specification-txt{
+    color: $landing-theme;
+    font-weight: 700;
+    display: inline;
+  }
+  &-button{
+    display:flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  &-section-border1{
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem !important;
+    border-radius: 15px;
+  } &-section-border2{
+    background-color: #f6f6f6;
+    margin: 1rem;
+    padding: 1rem !important;
+    border-radius: 15px;
+  }
+  &-table-style{
+    border-bottom: none;
+  }
+}
 

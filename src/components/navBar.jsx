@@ -1,20 +1,20 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const NavBar = () => {
-  useEffect(()=>{
+  useEffect(() => {
     let sidenav = document.querySelector("#mobile-demo");
-    M.Sidenav.init(sidenav, {})
-  })
+    M.Sidenav.init(sidenav, {});
+  });
 
-  
   return (
- 
     <div>
       <nav>
         <div className="nav-wrapper">
           <a href="#!" className="brand-logo">
-            <i className="material-icons">camera_alt</i>
+            <p className="remove-margin">
+              <i className="material-icons">camera_alt</i>ANPR
+            </p>
           </a>
           <a href="#!" data-target="mobile-demo" className="sidenav-trigger">
             <i className="material-icons">menu</i>
@@ -46,7 +46,6 @@ const NavBar = () => {
         <li>
           <a href="collapsible.html">Google Colab</a>
         </li>
-     
       </ul>
     </div>
   );
