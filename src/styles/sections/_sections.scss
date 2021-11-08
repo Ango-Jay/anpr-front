@@ -70,7 +70,33 @@ text-align:center;
 }
 
 .result{
-  background-color: #f4f8ff;
+
+ background-color:#e2edff;
+  &-flex-container{
+    @include respond(tab-port-sm){
+      display: flex;
+      flex-direction: row;
+      background-color:#e2edff;
+    }
+  
+  }
+  &-flex-child{
+    @include respond(tab-port-sm){
+      display: flex;
+      margin: 0;
+      width: 100%;
+      padding: 2rem;
+
+    }
+    @include respond(tab-port){
+      display: flex;
+      margin: 0;
+      width: 150%;
+      padding: 2rem;
+
+    }
+    
+  }
   &-background-header{
     background-color: $landing-theme;
     //background-image:  linear-gradient( rgba(138, 138, 138, 0.5), rgba(43, 43, 43, 0.5) );
@@ -79,6 +105,24 @@ text-align:center;
   }
   &-background-title{
     padding-left: 1rem; 
+    @include respond(tab-port-sm){
+      padding-left: 3rem; 
+      margin-bottom: 5rem;
+   
+
+    }
+  }
+  &-background-1{
+    background-color: $landing-theme;
+    @include respond(tab-port-sm){
+      background-color:transparent;
+    }
+  }
+  &-background-2{
+    background-color: #e2edff;
+    @include respond(tab-port-sm){
+      background-color:transparent;
+    }
   }
   &-status{
     //border: 2px solid #00FF00;
@@ -99,6 +143,8 @@ text-align:center;
     color: $landing-theme;
     font-weight: 700;
     display: inline;
+    font-size: 16px;
+
   }
   &-button{
     display:flex;
@@ -110,14 +156,20 @@ text-align:center;
     margin: 1rem;
     padding: 1rem !important;
     border-radius: 15px;
+    @include respond(tab-port-sm){
+   min-width: 300px;
+      width: 100%;
+     
+
+    }
   } &-section-border2{
     background-color: #f6f6f6;
     margin: 1rem;
     padding: 1rem !important;
     border-radius: 15px;
   }
-  &-table-style{
-    border-bottom: none;
+  &-table{
+   color: $landing-theme-2
   }
 }
 
