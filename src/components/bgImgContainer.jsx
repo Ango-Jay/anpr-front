@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./button";
+import NavButton from "./NavButton";
 import NavBar from "./navBar";
 import LargeBg from "../../public/assets/bg-img5-min.jpg";
 
@@ -31,12 +31,12 @@ const BgImgContainer = () => {
                     <p>providing security using computer vision</p>
                   </div>
                   <div className="disp-flex justify-center flex-dir-column align-item-center hide-on-large-only">
-                    <Button
+                    <NavButton
                       buttonIconName="cloud_upload"
                       buttonFunction="Upload"
                       buttonNavigation="/result"
                     />
-                    <Button
+                    <NavButton
                       buttonIconName="code"
                       buttonFunction="View source code"
                       style={buttonStyle}
@@ -53,12 +53,12 @@ const BgImgContainer = () => {
           <div className="pt-main"></div>
           <h3>Upload Image Here</h3>
           <div className="disp-flex justify-center flex-dir-column align-item-center">
-            <Button
+            <NavButton
               buttonIconName="cloud_upload"
               buttonFunction="Upload"
               buttonNavigation="/result"
             />
-            <Button
+            <NavButton
               buttonIconName="code"
               buttonFunction="View source code"
               style={buttonStyle}

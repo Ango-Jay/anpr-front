@@ -1,20 +1,29 @@
 import React from "react";
 import Navbar from "../../components/navBar";
-import Button from "../../components/button";
 import carImg from "../../../public/assets/car-min.jpg";
 import licenseImg from "../../../public/assets/license.png";
 
 const Result = () => {
   const isSaved = () => {
     if ("e" === 0) {
-      return <Button buttonIconName="save" buttonFunction="Save" />;
+      return (
+        <button
+          className="waves-effect waves-light btn landing-btn"
+          onClick={"ffg"}
+        >
+          <i className="material-icons left">save</i>
+          "Save"
+        </button>
+      );
     } else {
       return (
-        <Button
-          buttonIconName="delete"
-          buttonFunction="Delete"
-          style={{ backgroundColor: "#af0404", borderRadius: "50px" }}
-        />
+        <button
+          className="waves-effect waves-light btn landing-btn"
+          onClick={"ffg"}
+        >
+          <i className="material-icons left">delete</i>
+          Delete
+        </button>
       );
     }
   };
